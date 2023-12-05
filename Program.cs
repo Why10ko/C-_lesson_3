@@ -94,32 +94,3 @@
 // }
 
 // Задача 4 -------------------------------------------
-
-{
-	public class Program
-	{
-		public static void Main(string [] arg) 
-		{
-			Random rand = new Random();
-			int size = 100000;			
-			int [] array = new int[size];
-			
-
-			for (int i = 1; i <= size; i++) 
-			{
-				array[i] = rand.Next();
-			}
-
-			foreach (double item in array) 
-			{
-				System.Console.Write(item + " ");
-			}		
-
-			double max = array.Max();
-			double min = array.Min();
-			double total = max - min;
-
-			System.Console.WriteLine($"The difference between the maximum and minimum values is => {Math.Round(total, 2)}");
-		}
-	}
-}
